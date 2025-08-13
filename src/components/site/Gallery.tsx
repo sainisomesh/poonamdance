@@ -4,6 +4,8 @@ const defaultImages: GalleryItem[] = [
   { src: "/lovable-uploads/11885507-34a4-484d-84a8-bf3f9c5a1e95.png", alt: "Poonam Saini in vibrant Rajasthani attire" },
   { src: "/lovable-uploads/d2b600e5-a152-4512-b3c1-8448e6a2f47e.png", alt: "Poonam Dance troupe in colorful ghagras performing" },
   { src: "/lovable-uploads/204c1f4a-28b7-4aaa-96c8-d3fcd9c96939.png", alt: "Young dancers in yellow and red lehengas" },
+  { src: "/lovable-uploads/c5eaeaf9-c469-40ff-a086-10cc86886c60.png", alt: "Lead instructors of Poonam Dance together outdoors" },
+  { src: "/lovable-uploads/3aeba9b1-049d-4313-849b-ca347cd793d5.png", alt: "Dancer twirling in orange Rajasthani attire" },
 ];
 
 const Gallery = () => {

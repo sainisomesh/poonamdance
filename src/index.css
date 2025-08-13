@@ -46,11 +46,16 @@ All colors MUST be HSL.
     --brand-teal: 182 55% 40%;
     --brand-marigold: 42 96% 50%;
 
+    /* Pastels */
+    --pastel-peach: 24 95% 88%;
+    --pastel-lilac: 275 65% 88%;
+    --pastel-mint: 160 55% 85%;
+
     /* Gradients and effects */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-saffron)) 0%, hsl(var(--brand-fuchsia)) 55%, hsl(var(--brand-teal)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--pastel-peach)) 0%, hsl(var(--pastel-lilac)) 55%, hsl(var(--pastel-mint)) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
-    --shadow-elevate: 0 10px 30px -10px hsl(var(--brand-fuchsia) / 0.25);
-    --shadow-glow: 0 8px 22px hsl(var(--brand-saffron) / 0.35);
+    --shadow-elevate: 0 10px 30px -10px hsl(var(--brand-fuchsia) / 0.18);
+    --shadow-glow: 0 8px 22px hsl(var(--brand-saffron) / 0.28);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -131,4 +136,12 @@ All colors MUST be HSL.
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
+
+  /* Interactive utilities */
+  .story-link { position: relative; display: inline-block; }
+  .story-link::after { content: ""; position: absolute; width: 100%; transform: scaleX(0); height: 2px; bottom: 0; left: 0; background: hsl(var(--primary)); transform-origin: bottom right; transition: transform 300ms; }
+  .story-link:hover::after { transform: scaleX(1); transform-origin: bottom left; }
+  .hover-scale { transition: transform 200ms; }
+  .hover-scale:hover { transform: scale(1.05); }
+  .pulse { animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite; }
 }

@@ -3,6 +3,7 @@ import Hero from "@/components/site/Hero";
 import Gallery from "@/components/site/Gallery";
 import EventList from "@/components/site/EventList";
 import Footer from "@/components/site/Footer";
+import Instructors from "@/components/site/Instructors";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -71,7 +72,7 @@ const Index = () => {
             </div>
           </div>
         </section>
-
+        <Instructors />
         <Gallery />
         <EventList />
       </main>
