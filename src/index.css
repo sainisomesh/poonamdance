@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@500;700;800&display=swap');
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
@@ -17,8 +19,8 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 24 95% 45%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -38,20 +40,25 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    /* Brand palette */
+    --brand-saffron: 24 95% 45%;
+    --brand-fuchsia: 328 82% 48%;
+    --brand-teal: 182 55% 40%;
+    --brand-marigold: 42 96% 50%;
+
+    /* Gradients and effects */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-saffron)) 0%, hsl(var(--brand-fuchsia)) 55%, hsl(var(--brand-teal)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+    --shadow-elevate: 0 10px 30px -10px hsl(var(--brand-fuchsia) / 0.25);
+    --shadow-glow: 0 8px 22px hsl(var(--brand-saffron) / 0.35);
+
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -65,8 +72,8 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 24 95% 60%;
+    --primary-foreground: 0 0% 10%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -101,5 +108,27 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Poppins', ui-sans-serif, system-ui;
+  }
+}
+
+/* Utilities: gradients, glows, animations */
+@layer utilities {
+  .bg-gradient-hero { background-image: var(--gradient-hero); }
+  .bg-gradient-subtle { background-image: var(--gradient-subtle); }
+  .shadow-elevate { box-shadow: var(--shadow-elevate); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientMove 12s ease infinite;
+  }
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 }
