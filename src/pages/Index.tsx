@@ -36,15 +36,19 @@ const Index = () => {
             <div className="order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl font-display font-bold">About Poonam Dance</h2>
               <p className="mt-4 text-muted-foreground">
-                Poonam Dance is a community-rooted troupe led by Poonam Saini. We bring the joy of Indian dance to
-                stages across the Midwest — celebrating rhythm, color, and storytelling through Bollywood, classical Kathak,
-                and Rajasthani folk traditions. From festivals and weddings to school assemblies and workshops, we tailor
-                performances to every audience.
+                Based In Toledo, Ohio, Poonam Dance Is A Community‑Rooted Troupe Led By Poonam Saini. We Bring The Joy
+                Of Indian Dance To Stages Across The Midwest — Celebrating Rhythm, Color, And Storytelling Through
+                Bollywood, Classical Kathak, And Rajasthani Folk Traditions. From Festivals And Weddings To School
+                Assemblies And Workshops, We Tailor Performances To Every Audience.
               </p>
               <div className="mt-6">
                 <Button variant="hero" asChild>
-                  <a href="mailto:poonamdance@gmail.com">Inquire about booking</a>
+                  <a href="mailto:poonamdance@gmail.com">Inquire About Booking</a>
                 </Button>
+                <p className="mt-4 text-sm text-muted-foreground">
+                  <span className="font-semibold">Interested In Joining The Team?</span> Learn About Affordable Pricing And
+                  The Many Benefits Of Our Supportive Community — <a href="mailto:poonamdance@gmail.com" className="story-link">Contact Us</a>.
+                </p>
               </div>
             </div>
             <div className="order-1 md:order-2">

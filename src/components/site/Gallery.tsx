@@ -6,6 +6,7 @@ const defaultImages: GalleryItem[] = [
   { src: "/lovable-uploads/204c1f4a-28b7-4aaa-96c8-d3fcd9c96939.png", alt: "Young dancers in yellow and red lehengas" },
   { src: "/lovable-uploads/c5eaeaf9-c469-40ff-a086-10cc86886c60.png", alt: "Lead instructors of Poonam Dance together outdoors" },
   { src: "/lovable-uploads/3aeba9b1-049d-4313-849b-ca347cd793d5.png", alt: "Dancer twirling in orange Rajasthani attire" },
+  { src: "/lovable-uploads/f92fb500-d083-4902-8e1b-bf640884da9b.png", alt: "Two dancers sharing a candid moment in traditional attire" },
 ];
 
 const Gallery = () => {

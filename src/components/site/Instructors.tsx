@@ -13,9 +13,8 @@ const Instructors = () => {
         <div>
           <h2 className="text-3xl md:text-4xl font-display font-bold">Lead Instructors</h2>
           <p className="mt-4 text-muted-foreground">
-            Our core team brings years of performance and teaching experience across Bollywood, Kathak,
-            and Rajasthani folk traditions. They lead workshops, choreograph shows, and mentor the next
-            generation of dancers.
+            Meet Poonam, Ananya, And Laya — From Different Backgrounds, Each Leads Independent Sessions To
+            Support Your Dance Journey And Growth.
           </p>
           <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
             <li className="rounded-md border p-3 bg-background shadow-sm">Show choreography & creative direction</li>
